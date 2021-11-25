@@ -3,7 +3,9 @@ import { ReactComponent as Vendor } from "./../shopvendor.svg";
 import { ReactComponent as Home } from "./../home.svg";
 import { ReactComponent as Medicine } from "./../medicine.svg";
 import { ReactComponent as Customer } from "./../customer1.svg";
-import { ReactComponent as Sale } from "./../home.svg";
+import { ReactComponent as Sale } from "./../sale.svg";
+import { ReactComponent as Request } from "./../home.svg";
+import { ReactComponent as Transaction } from "./../transaction.svg";
 import { Link } from "react-router-dom";
 const Menus = () => {
   return (
@@ -56,6 +58,26 @@ const Menus = () => {
           to="/vendor"
         >
           Vendor
+        </Link>
+      </div>
+      <div className="flex flex-row mt-4 group-hover:bg-gray-600">
+        <Request />
+        <Link
+          className="pl-2 text-2xl font-bold text-gray-800 appearance-none"
+          tag="a"
+          to="/request"
+        >
+          Request
+        </Link>
+      </div>
+      <div className="flex flex-row mt-4 group-hover:bg-gray-600">
+        <Transaction />
+        <Link
+          className="pl-2 text-2xl font-bold text-gray-800 appearance-none"
+          tag="a"
+          to="/transaction"
+        >
+          Transaction
         </Link>
       </div>
     </div>

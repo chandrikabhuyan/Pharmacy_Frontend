@@ -7,7 +7,7 @@ function Header({ name, title }) {
   return (
     <div className="flex flex-row items-center justify-between my-8">
       <Link to="/">
-        <div className="text-3xl font-medium">Pharmacy Management System</div>
+        <div class=" text-3xl font-medium text-pink-500 text-opacity-150 ...">Pharmacy Management System</div>
       </Link>
 
       <div className="flex flex-row items-center">

@@ -4,20 +4,30 @@ import Home from "./components/Home";
 import { Route, Switch } from "react-router-dom";
 import MyProfile from "./components/MyProfile";
 import Medicine from "./components/Medicine";
+import Vendor from "./components/Vendor";
+import Customer from "./components/Customer";
 
 function App() {
   return (
     <div>
       <Switch>
-        <Route path="/myprofile">
+        <Route exact path="/myprofile">
           <MyProfile />
         </Route>
 
-        <Route path="/medicine">
+        <Route exact path="/customer">
+          <Customer />
+        </Route>
+
+        <Route exact path="/medicine">
           <Medicine />
         </Route>
 
-        <Route path="/">
+        <Route path="/vendor">
+          <Vendor />
+        </Route>
+
+        <Route exact path="/">
           <Home />
         </Route>
       </Switch>
